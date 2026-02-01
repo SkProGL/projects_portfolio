@@ -95,7 +95,6 @@ i {
 .slider {
   display: flex;
   aspect-ratio: 16/10;
-  /* aspect-ratio: 4/3; */
   overflow: hidden;
   /* scroll-snap-type: x mandatory; */
   max-height: var(--media-height);

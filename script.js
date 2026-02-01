@@ -10,7 +10,7 @@ document.querySelectorAll(".slider-nav a").forEach((link) => {
     nav.querySelectorAll("a").forEach((a) => a.classList.remove("active"));
     link.classList.add("active");
 
-    const target = document.getElementById(link.getAttribute("href").slice(1));
+    const target = document.getElementById(link.getAttribute("href").slice(1) );
 
     if (target) {
       slider.scrollTo({
@@ -34,7 +34,6 @@ document.querySelectorAll(".overview li").forEach((li, index) => {
   if (li.querySelector(".li-icon")) return;
 
   const hasLink = !!links[index];
-
   const icon = document.createElement(hasLink ? "a" : "span");
   icon.className = "li-icon";
   if (hasLink) {
