@@ -1,15 +1,212 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glebs Leonovs - Projects</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=JetBrains Mono"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<source src="script.js" type="text/javascript">
-</head>
+  <body>
+    <div id="mainDiv">
+      <div>Projects:</div>
 
-<body>
+      <br />
+      <ul class="overview">
+        <li>
+          <a href="#project-1">Translatorium</a
+          ><span> chrome translator extension</span>
+        </li>
+        <li>
+          <a href="#project-2">Cinema booking system</a
+          ><span> cross platform application</span>
+        </li>
+        <li>
+          <a href="#project-3">Fanuc CNC postprocessor</a
+          ><span> G-code formatting for Harrison Alpha 600</span>
+        </li>
+        <li>
+          <a href="#project-4">Orwell The Finder</a
+          ><span> housing finder bot</span>
+        </li>
+        <li>
+          <a href="#project-5">Hotel booking system</a>
+        </li>
+        <br />
+      </ul>
+      <br />
+      <br />
+      <section class="container" id="project-1">
+        Translatorium <i>(JS)</i>
+      </section>
+      <div class="description-text">
+        <span
+          >A
+          <a href="https://github.com/SkProGL/Translatorium">chrome extension</a
+          >, used for translation and dictionary lookup.</span
+        >
+        <p></p>
+      </div>
+      <p></p>
+      <video src="src/Translatorium.mp4" controls muted>
+        <p>Your browser doesn't support HTML video.</p>
+      </video>
+      <p></p>
+      <section class="container" id="project-2">
+        Cinema system <i>(Dart, Flutter + MongoDB)</i>
+      </section>
 
-</body>
+      <div class="description-text">
+        <div>
+          Application end-users would be managers, admins and booking staff.
+          Part of my coursework project, that I decided to implement in Flutter
+        </div>
+      </div>
+      <p></p>
+      <div class="slider-wrapper">
+        <div class="slider">
+          <img
+            id="slide-1"
+            src="src/CinemaSystem/android_img/android_login.png"
+            alt="Image of login page"
+          />
+          <img
+            id="slide-2"
+            src="src/CinemaSystem/android_img/android_listings_1.png"
+            alt="Image of available movies"
+          />
+          <img
+            id="slide-3"
+            src="src/CinemaSystem/android_img/android_movie.png"
+            alt="Image of chosen movie"
+          />
+          <img
+            id="slide-4"
+            src="src/CinemaSystem/android_img/android_checkout_1.png"
+            alt="Image of generated receipt"
+          />
+          <img
+            id="slide-5"
+            src="src/CinemaSystem/android_img/android_popularity.png"
+            alt="Image of movie popularity"
+          />
+        </div>
+        <div class="slider-nav">
+          <a href="#slide-1" class="active">🔒</a>
+          <a href="#slide-2">📜</a>
+          <a href="#slide-3">🎬</a>
+          <a href="#slide-4">📄</a>
+          <a href="#slide-5">✨</a>
+        </div>
+      </div>
 
+      <p></p>
+
+      <section class="container" id="project-3">
+        Fanuc postprocessor <i>(JS)</i>
+      </section>
+      <div class="description-text">
+        Postprocessor is responsible for creating machine dependent
+        instructions, in this case it's Harrison Alpha specific instructions.
+      </div>
+      <p></p>
+      <img class="img-gallery" src="src/PostProcessor/1.png" controls muted />
+      <p />
+
+      <p></p>
+      <section class="container" id="project-4">
+        Orwell The Finder <i>(Python)</i>
+      </section>
+      <div class="description-text">
+        A Telegram messenger bot, that makes housing lookup every 10 minutes,
+        notifying only based on user defined filter.
+      </div>
+      <p></p>
+      <video src="src/OrwellTheFinder.mp4" controls muted>
+        <p>Your browser doesn't support HTML video.</p>
+      </video>
+      <p></p>
+
+      <section class="container" id="project-5">
+        WorldHotels <i>(Python, Flask + JS + SQL)</i>
+      </section>
+      <div class="description-text">
+        Basic platform for bookings with payment simulation and invoice
+        auto-generation. Automatically calculates fees and discounts based on
+        cancellation / order date. Implements password reset via email
+      </div>
+      <p></p>
+      <div class="slider-wrapper">
+        <div class="slider">
+          <img
+            id="hotels-slide-1"
+            src="src/WorldHotels/1.png"
+            alt="Image of login page"
+          />
+          <img
+            id="hotels-slide-2"
+            src="src/WorldHotels/2.png"
+            alt="Image of available movies"
+          />
+          <img
+            id="hotels-slide-3"
+            src="src/WorldHotels/3.png"
+            alt="Image of chosen movie"
+          />
+          <img
+            id="hotels-slide-4"
+            src="src/WorldHotels/4.png"
+            alt="Image of generated receipt"
+          />
+          <img
+            id="hotels-slide-5"
+            src="src/WorldHotels/5.png"
+            alt="Image of movie popularity"
+          />
+          <img
+            id="hotels-slide-6"
+            src="src/WorldHotels/6.png"
+            alt="Image of login page"
+          />
+          <img
+            id="hotels-slide-7"
+            src="src/WorldHotels/7.png"
+            alt="Image of available movies"
+          />
+          <img
+            id="hotels-slide-8"
+            src="src/WorldHotels/8.png"
+            alt="Image of chosen movie"
+          />
+          <img
+            id="hotels-slide-9"
+            src="src/WorldHotels/9.png"
+            alt="Image of generated receipt"
+          />
+          <img
+            id="hotels-slide-10"
+            src="src/WorldHotels/10.png"
+            alt="Image of movie popularity"
+          />
+        </div>
+        <div class="slider-nav">
+          <a href="#hotels-slide-1" class="active">1</a>
+          <a href="#hotels-slide-2">2</a>
+          <a href="#hotels-slide-3">3</a>
+          <a href="#hotels-slide-4">4</a>
+          <a href="#hotels-slide-5">5</a>
+          <a href="#hotels-slide-6">6</a>
+          <a href="#hotels-slide-7">7</a>
+          <a href="#hotels-slide-8">8</a>
+          <a href="#hotels-slide-9">9</a>
+          <a href="#hotels-slide-10">10</a>
+        </div>
+      </div>
+    </div>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
 </html>
