@@ -96,7 +96,7 @@ i {
   display: flex;
   aspect-ratio: 16/10;
   /* aspect-ratio: 4/3; */
-  overflow: auto;
+  overflow: hidden;
   /* scroll-snap-type: x mandatory; */
   max-height: var(--media-height);
   /* box-shadow: 0 1.5rem 3rem -0.75rem hsla(0%, 0%, 0%, 1); */
