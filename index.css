@@ -7,6 +7,13 @@ body {
   margin: 5vh auto 30vh auto;
   font-family: "JetBrains Mono";
   color: black;
+  aspect-ratio: 16 / 9;
+  background-image: url("src/overview_v2.png");
+  background-repeat: no-repeat; /* prevent tiling */
+  background-size: cover; /* scale to cover screen */
+  background-position: center; /* keep centered */
+  background-attachment: fixed; /* optional: parallax effect */
+  padding-bottom: 90vh;
 }
 
 html,
@@ -176,6 +183,7 @@ a.active {
 }
 .li-icon {
   visibility: hidden;
+  /* display: none; */
   vertical-align: middle;
   filter: brightness(0) saturate(100%) invert(36%) sepia(93%) saturate(1608%)
     hue-rotate(206deg) brightness(94%) contrast(103%);
@@ -186,4 +194,28 @@ a.active {
 }
 li:hover .li-icon {
   visibility: visible;
+  /* display: inline-block; */
+}
+
+#repo-link {
+  text-decoration: none;
+}
+.text-highlight {
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px) brightness(1.1);
+  padding: 1rem;
+  border-radius: 0.8rem;
+  text-align: center;
+}
+
+.overview {
+  text-align: left;
+  padding: 0;
+}
+.overview li {
+  padding-right: 40px;
+}
+#main {
+  /* background-color: rgb(220 124 124 / 25%); */
+  background-color: rgb(163 187 156 / 25%);
 }
